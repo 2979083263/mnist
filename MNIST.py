@@ -87,7 +87,7 @@ class Net(nn.Module):
         
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
-        x = torch.sigmoid(self.fc3(x))
+        x = self.fc3(x)
         
         return x
 
